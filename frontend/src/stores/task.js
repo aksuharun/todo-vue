@@ -4,11 +4,11 @@ export const useTaskStore = defineStore('task', {
 	state: () => {
 		return {
 			tasks: [
-				{id: 1, content: 'first', tag: 0},
-				{id: 2, content: 'second', tag: 1},
-				{id: 3, content: 'third', tag: 2},
-				{id: 4, content: 'Ders Calis Ders calismazsan kotu olur ve sinifta kalirsin', tag: 3 },
-				{id: 5, content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi et consectetur ad ut ipsam minus eum ipsa voluptas laudantium. Tenetur temporibus doloribus eveniet magni quam ratione cupiditate mollitia nostrum asperiores?', tag: 4 },
+				{id: 1, content: 'You can create unlimited tasks above.', tag: 0},
+				{id: 2, content: 'Click the colored square to change the tag.', tag: 1},
+				{id: 3, content: 'Click the trash bin icon to delete the task.', tag: 2},
+				{id: 4, content: 'You can also filter tag from above.', tag: 3 },
+				{id: 5, content: 'Work Hard, Play Hard!', tag: 4 },
 			],
 		}
 	},
