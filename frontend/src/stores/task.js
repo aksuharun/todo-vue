@@ -18,13 +18,7 @@ export const useTaskStore = defineStore('task', {
 			return (tag) => state.tasks.filter(t => t.tag == tag)
 		},
 		getActiveTags() {
-			const activeTags = []
-			for(let i = 0; i <= 6; i++) {
-				if(this.tasks.some(t => t.tag === i)) {
-					activeTags.push(i)
-				}
-			}
-			return activeTags
+			return [...new Set(this.tasks.map(task => task.tag))]
 		}
 	},
 	
